@@ -1,0 +1,185 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 14px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+.plus_btn {
+	width: 25px;
+	height: 25px;
+  	border-radius: 3px;
+	margin-top: 3px;
+	text-align:center;
+	line-height: 22px;
+	color: #fff;
+	background-color: #eb6100;
+	border-bottom: 3px solid #b84c00;
+	font-weight: bold;
+}
+.c-right0 {
+	padding-right: 0px;
+}
+.c-left0 {
+	padding-left: 0px;
+}
+label {
+	margin-bottom: 2px;
+}
+hr {
+	border-color: #fff;
+	margin-top: 5px;
+	margin-bottom: 0.5px;
+}
+p {
+	margin-bottom: 2px;
+}
+.form-group {
+	margin-bottom: 2px;
+}
+.nav-tabs .nav-link.active {
+	background-color: #343a40;
+	border-bottom: #343a40;
+	font-weight: bold;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+.swiper-pagination-bullet {
+	background: #fff;
+}
+.swiper-button-prev:after,
+.swiper-button-next:after {
+	display: none;
+}
+.swiper-button-prev {
+	width: 30px;
+	height: 30px;
+	border: 5px solid;
+	border-color:  transparent transparent #fff #fff;
+	transform: rotate(45deg);
+	margin-top: 280px;
+}
+.swiper-button-next {
+	width: 30px;
+	height: 30px;
+	border: 5px solid;
+	border-color:  transparent transparent #fff #fff;
+	transform: rotate(-135deg);
+	margin-top: 280px;
+}
+.btn-outline-info,
+.btn-outline-secondary,
+.btn-outline-success,
+.btn-outline-warning {
+	background-color: #fff;
+}
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+  position: fixed;
+  top: 50px;
+  left: 400px;
+  width: 520px;
+  height: 300px;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding-right: 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+}
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 200px;
+}
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+}
+/*モーダル枠の指定*/
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 550px;
+  height: 300px;
+  width: 90%;
+}
+/*モーダルを閉じるボタンの指定*/
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content{
+  text-align: left;
+  background: #f5f5f5;
+  height: 250px;
+  padding: 30px;
+}
+.part1 {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.l_center {
+	padding-top: 5px;
+	margin-right: 10px;
+	margin-left: 15px;
+}
+.l2_center {
+	padding-top: 5px;
+	margin-right: 10px;
+}
+.left_text {
+	width: 100px;
+}
+.down_mv {
+	display: flex;
+	margin-bottom: 20px;
+}
+.part_1d,.part_2d,.part_3d,.part_4d,
+#add1,#add2,#add3,#add4 {
+	margin-bottom: 10px;
+}
+.btn-primary {
+	margin-top: 60px;
+	margin-right: 15px;
+}
+.btn-danger {
+	margin-top: 60px;
+	margin-left: 15px;
+}

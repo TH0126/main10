@@ -1,0 +1,245 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 12px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+.container-fluid {
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.dark {
+	background-color: #343a40;
+	padding-top: 3px;
+	padding-left: 2px;
+	height: 660px;
+}
+.main {
+	position: relative;
+	display: flex;
+}
+#chart {
+	width: 1150px;
+	height: 640px;
+}
+.sma-legend {
+	width: 200px;
+	height: 70px;
+	position: absolute;
+	padding: 8px;
+	font-size: 12px;
+	background-color: rgba(255, 255, 255, 0.23);
+	text-align: left;
+	z-index: 1000;
+	/* pointer-events: none; */
+	display: block;
+	left: 3px;
+	top: 3px;
+}
+.nav-tabs .nav-link.active {
+	background-color: #343a40;
+	border-bottom: #343a40;
+	font-weight: bold;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+#function {
+	display: flex;
+	width: 382px;
+	height: 30px;
+	background-color: #fff;
+	border-left: 2px solid;
+	border-bottom: 2px solid;
+	border-color: #9fa0a0;
+}
+.currency {
+	width: 80px;
+	color: #007bbb;
+	font-size: 16px;
+	align-items: center;
+	border-right: 2px solid;
+	border-color: #9fa0a0;
+}
+.chart_time {
+	width: 50px;
+	height: 26px;
+	font-size: 16px;
+	align-items: center;
+	text-align: center;
+}
+.chart_time2 {
+	width: 40px;
+	height: 26px;
+	font-size: 16px;
+	align-items: center;
+	text-align: center;
+}
+.chart_time3 {
+	width: 30px;
+	height: 26px;
+	font-size: 16px;
+	align-items: center;
+	text-align: center;
+}
+.chart_time:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+.chart_time2:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+.chart_time3:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+.act {
+	color: #0000ff;
+	font-weight: 600;
+}
+.technical {
+	width: 26px;
+	height: 26px;
+	border-left: 2px solid;
+	border-color: #9fa0a0;
+}
+img {
+	width: 26px;
+	height: 26px;
+}
+.technical:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+/*モーダル本体の指定 + モーダル外側の背景の指定*/
+.modal-container{
+  position: fixed;
+  top: 50px;
+  left: 400px;
+  width: 620px;
+  height: 600px;
+  text-align: center;
+  background: rgba(0,0,0,50%);
+  padding-right: 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+}
+/*モーダル本体の擬似要素の指定*/
+.modal-container:before{
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 200px;
+}
+/*モーダル本体に「active」クラス付与した時のスタイル*/
+.modal-container.active{
+  opacity: 1;
+  visibility: visible;
+  z-index: 9;
+}
+/*モーダル枠の指定*/
+.modal-body{
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 550px;
+  height: 300px;
+  width: 90%;
+}
+/*モーダルを閉じるボタンの指定*/
+.modal-close{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+/*モーダル内のコンテンツの指定*/
+.modal-content{
+  text-align: left;
+  background: #fff;
+  height: 550px;
+  padding: 30px;
+}
+.part1 {
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.btn-outline-info {
+	background-color: #fff;
+}
+#inge_de > div {
+	font-size: 16px;
+}
+.sma-legend img {
+	width: 9px;
+	height: 9px;
+}
+#d_ma20,#d_ma75,#d_ma200,#d_mtf1d,#d_mtf1w {
+	display: flex;
+}
+#re_ma20:hover {
+	cursor : pointer;
+}
+#re_ma75:hover {
+	cursor : pointer;
+}
+#re_ma200:hover {
+	cursor : pointer;
+}
+#re_mtf1d:hover {
+	cursor : pointer;
+}
+#re_mtf1w:hover {
+	cursor : pointer;
+}
+#s_ma20:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+#s_ma75:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+#s_ma200:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+#s_mtf1d:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}
+#s_mtf1w:hover {
+	background-color: #f3f3f3;
+	cursor : pointer;
+}

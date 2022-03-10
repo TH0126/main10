@@ -1,0 +1,100 @@
+
+/*全体　共通
+最初から設定してあるので特に変更
+しなくても大丈夫です♪
+-----------------*/
+body{
+	font-family: Roboto, "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	line-height: 1.75;
+	font-size: 12px;
+}
+
+
+/*　パディングをサイズ内側にする処理　*/
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+/*ーーーーーーーーーーー*/
+/*この下から記述*/
+/*ーーーーーーーーーーー*/
+.dark {
+  display:flex;
+	background-color: #343a40;
+	padding-top: 20px;
+	height: 680px;
+}
+.nav-tabs .nav-link.active {
+	background-color: #343a40;
+	border-bottom: #343a40;
+	font-weight: bold;
+}
+.nav-tabs {
+	border-bottom: none;
+}
+.total_ul{
+  list-style:none;
+  display:flex;
+}
+.total_col {
+  text-align: right;
+  width:150px;
+  padding:0 20px;
+  border-right:2px solid #fff;
+  margin-top: 10px;
+  margin-left: 50px;
+}
+.total_de {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+li > p {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.total_p {
+  color: #fff;
+  margin-top: 50px;
+  margin-left: 50px;
+  font-size: 15px;
+}
+.detail {
+  width: 900px;
+}
+.detail_p {
+  margin-top: 30px;
+  margin-left: 240px;
+  color: #fff;
+  font-size: 15px;
+}
+.header {
+  text-align: center;
+	background-color: #8b4513;
+	color: #fff;
+}
+table {
+  height: 20vh;
+}
+tbody {
+  text-align: center;
+}
+.table thead th {
+    vertical-align: middle;
+}
+.table thead td {
+  text-align: center;
+  vertical-align: middle;
+}
+table tr.retu:nth-child(even){
+  background-color: #87ceeb
+}
+table tr.retu:nth-child(odd){
+  background-color: #fff
+}
